@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    
+    <p class="todolistcss">Todo List</p>
+    <div class="main">
+    <div class="grid">
+    <input placeholder="Todo List" class="js-todo input"  onkeydown="
+    if(event.key === 'Enter'){
+        addTodo();
+    }
+    " >
+    <input type="date" placeholder="date"   class="duedate">
+    <button onclick="
+
+    addTodo();
+    " class="addbutton">Add</button>
+    </div>
+    <div class="none" id="js-none"> NO  Task avilable</div>
+    <div class="js-kaam grid2" ></div>
+    </div> 
+    <script src="todo-list.js"></script>
+</body>
+</html>
